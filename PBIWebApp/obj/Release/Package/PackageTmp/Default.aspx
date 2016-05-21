@@ -1,7 +1,5 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PBIWebApp._Default" %>
-
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
     <!-- Sign in -->
     <div><h1 style="border-bottom:solid; border-bottom-color: silver">Power BI: Get datasets sample web applicaton</h1>
         <asp:Panel ID="signinPanel" runat="server" Visible="true">     
@@ -11,13 +9,10 @@
             </p>   
         </asp:Panel>   
     </div>
-
     <!-- Get datasets -->
     <div> 
         <asp:Panel ID="PBIPanel" runat="server" Visible="false">
-            <tr>
-                <td><asp:Label ID="lblError" ForeColor="Red" runat="server"></asp:Label></td>
-            </tr>
+            <asp:Label ID="lblError" ForeColor="Red" runat="server"></asp:Label>
             <p><b class="step">Step 2</b>: Get the data.</p>
             <table>
             <tr>
@@ -43,7 +38,7 @@
             </tr>
             <tr>
                 <td><asp:Button ID="clearTableRowsButton" runat="server" OnClick="clearTableRowsButton_Click" Text="Clear Table Rows" /></td>
-                <td><asp:Button ID="clearAllButton" runat="server" OnClick="clearAllButton_Click" Text="Clear" /></td>
+                <td><asp:Button ID="clearAllButton" runat="server" OnClick="clearAllButton_Click" Text="Clear All" /></td>
             </tr>
             <tr>  
                 <td><asp:TextBox ID="clearTablesResultTextBox" runat="server" Rows="1"  TextMode="SingleLine" Width="586px"></asp:TextBox></td>
@@ -55,14 +50,7 @@
             <tr>
                 <td><asp:Label ID="userLabel" runat="server"></asp:Label></td>
             </tr>
-            <tr>
-                <td><b>Access Token:</b></td>
-            </tr>
-            <tr>
-                <td><asp:TextBox ID="accessTokenTextbox" runat="server" Width="586px"></asp:TextBox></td>
-            </tr>
         </table>
         </asp:Panel>
     </div>
-
 </asp:Content>
