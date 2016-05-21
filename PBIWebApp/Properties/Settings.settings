@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PBIWebApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ClientID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0d9b90e9-7af4-44ef-8224-6200b92c0944</Value>
+    </Setting>
+    <Setting Name="ClientSecretKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">aIikDWqXYXYeFjd4QdhaY1W83KQmDtsZjou0Qh1eS0k=</Value>
+    </Setting>
+    <Setting Name="RedirectUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://powerbitools.azurewebsites.net/Redirect</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
